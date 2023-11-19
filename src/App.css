@@ -1,38 +1,76 @@
 .App {
-  text-align: center;
+  margin-top: 60px;
+  /* background: rgb(245, 240, 240); */
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* my tooltip css begin */
+.myRect {
+  pointer-events: all;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: steelblue;
   color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: block;
+  opacity: 0.75;
+}
+/* my tooltip css end */
+
+.top-side-label {
+  font-size: 50px;
+  font-family: bold, sans-serif;
+}
+.row-border {
+  border-bottom: 1px solid #000;
+  border-bottom-color: blue;
 }
 
-.App-link {
-  color: #61dafb;
+.inoteqia-label {
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: rgb(4, 4, 98);
+}
+input::placeholder {
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-side-menu-icons {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-left: 20px;
+}
+
+.chart-title-div {
+  background-color: #0d6efd;
+  height: 35px;
+}
+
+.chat-title-label {
+  color: white;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+
+.chart-div {
+  background-color: white;
+  height: auto;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-size: 12px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
 }
